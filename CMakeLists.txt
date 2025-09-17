@@ -6,6 +6,6 @@ find_package(SDL2 REQUIRED CONFIG)
 
 include_directories(${SDL2_INCLUDE_DIRS})
 
-add_executable(keylogger SDL_input_reader.cpp)
+add_executable(keylogger main.cpp)
 
 target_link_libraries(keylogger ${SDL2_LIBRARIES})
